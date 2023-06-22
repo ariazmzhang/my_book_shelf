@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Information</title>
+</head>
+<body>
+  <h1>Book Information</h1>
+  <label for="title">Title:</label>
+  <input type="text" id="title">
+  <label for="authors">Author:</label>
+  <input type="text" id="authors">
+  <label for="isbn">ISBN:</label>
+  <input type="text" id="isbn">
+  <button id="fetchBook">Search</button>
+ 
+
+  <div class="container">
+    <div id = book_shelf>
+        <h3>Book Shelf</h3>
+        <table id = book_shelf_table>
+            <!-- <tr>
+                <td id="button">
+                    <button id="remove_button" style="margin-left: 20px;">-</button>
+                    <button id="up_button">⬆️</button>
+                    <button id="down_button">⬇️</button>
+                </td >
+                <td id="song_name">hello</td>
+                <td id="song_artist">hello</td>
+                <td id="song_img">hello</td>
+            </tr>
+            <tr>
+              <td id="button">
+                  <button id="remove_button" style="margin-left: 20px;">-</button>
+                  <button id="up_button">⬆️</button>
+                  <button id="down_button">⬇️</button>
+              </td >
+              <td id="song_name">hello</td>
+              <td id="song_artist">hello</td>
+              <td id="song_img">hello</td>
+          </tr> -->
+            
+        </table>
+    </div>
+
+    <div id="search_result">
+      <h3 id="search_matching">Search Results </h3>
+      <table id="matching_result">
+          <!-- <tr>
+              <td>hello</td>
+              <td>hello</td>
+              <td>hello</td>
+          </tr> -->
+      </table>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="eventListener.js"></script>
+</body>
+</html>
