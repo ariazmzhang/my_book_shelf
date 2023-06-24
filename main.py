@@ -9,7 +9,7 @@ def extract_douban_info(url):
     response = requests.get(url)
 
     # Create a BeautifulSoup object to parse the HTML content
-    soup = BeautifulSoup(response.content, 'html5lib')
+    soup = BeautifulSoup(response.content, 'html.parser')
     print(soup.prettify())
     # Extract the problem name
     # problem = soup.find('span', class_='mr-2 text-xl font-medium leading-8 text-label-1 dark:text-dark-label-1').text.strip()
@@ -48,7 +48,7 @@ def extract_douban_info(url):
     #     'difficulty': problem_difficulty.lower(),
     # }
 
-# url = 'https://book.douban.com/subject/1647538/'
+url = 'https://book.douban.com/subject/1647538/'
 # url = 'https://leetcode.com/problems/two-sum/'
-url = 'http://www.google.com'
+# url = 'http://www.google.com'
 extract_douban_info(url)
